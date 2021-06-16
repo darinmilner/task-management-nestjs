@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  postgres-tasks:
+    container_name: postgres
+    image: postgres:13.1-alpine
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=secret
+    ports:
+      - "5432:5432"
